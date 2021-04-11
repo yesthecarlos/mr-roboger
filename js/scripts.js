@@ -10,11 +10,16 @@
 //
 // beepBoopRobo ()
 
-const userInput = 10;
+// function makeArray() {
+const userInput = 40;
 let integerArray = [];
 for (let index = 0; index <= userInput; index += 1){
-  integerArray.push(index)
+  integerArray.push(index);
 }
 integerArray;
+integerArray.toString().split(",");
+// }
+
+integerArray.forEach(function()
 
 // UI Logic
