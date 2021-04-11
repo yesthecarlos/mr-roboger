@@ -17,9 +17,23 @@ for (let index = 0; index <= userInput; index += 1){
   integerArray.push(index);
 }
 integerArray;
-integerArray.toString().split(",");
+
+let stringArray = integerArray.toString().split(",");
+
+// let modifiedStringArray = stringArray.replace("3", "Wont you be my neighbor?");
+
+stringArray.forEach(function() {
+  if (stringArray.val() === "3") {
+    stringArray.val() = "Wont you be my neighbor?"
+  }
+})
+integerArray.String.prototype.replace("2", "Boop!");
+integerArray.String.prototype.replace("1", "Beep!");
+
 // }
 
-integerArray.forEach(function()
+integerArray.forEach(function() {
+
+});
 
 // UI Logic
