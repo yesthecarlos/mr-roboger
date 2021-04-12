@@ -22,18 +22,22 @@ let stringArray = integerArray.toString().split(",");
 
 // let modifiedStringArray = stringArray.replace("3", "Wont you be my neighbor?");
 
-stringArray.forEach(function() {
-  if (stringArray.val() === "3") {
-    stringArray.val() = "Wont you be my neighbor?"
-  }
-})
-integerArray.String.prototype.replace("2", "Boop!");
-integerArray.String.prototype.replace("1", "Beep!");
+function replaceThree(element, index, array) {
+  if (element == "3") array[index] = "Won't you be my neighbor?";
+}
+stringArray.forEach(replaceThree);
+stringArray
+//   if (stringArray.includes("3")) {
+//     stringArray.val() = "Wont you be my neighbor?"
+//   }
+// })
+// integerArray.String.prototype.replace("2", "Boop!");
+// integerArray.String.prototype.replace("1", "Beep!");
 
-// }
+// // }
 
-integerArray.forEach(function() {
+// integerArray.forEach(function() {
 
-});
+// });
 
 // UI Logic
