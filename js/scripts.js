@@ -20,13 +20,23 @@ integerArray;
 
 let stringArray = integerArray.toString().split(",");
 
+stringArray.forEach(function(stringArray, index) {
+  if (stringArray.includes("3")){
+    stringArray[index] = "Won't you be my neighbor?";
+  }
+});
+
+stringArray;
+
+// stringArray.forEach(("3", index) => stringArray[index] = "Won't you be my neighbor?");
+
 // let modifiedStringArray = stringArray.replace("3", "Wont you be my neighbor?");
 
-function replaceThree(element, index, array) {
-  if (element == "3") array[index] = "Won't you be my neighbor?";
-}
-stringArray.forEach(replaceThree);
-stringArray
+// function replaceThree(element, index, array) {
+//   if (element == "3") array[index] = "Won't you be my neighbor?";
+// }
+// stringArray.forEach(replaceThree);
+// stringArray
 //   if (stringArray.includes("3")) {
 //     stringArray.val() = "Wont you be my neighbor?"
 //   }
